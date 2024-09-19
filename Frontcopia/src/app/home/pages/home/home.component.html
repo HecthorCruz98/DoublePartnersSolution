@@ -1,0 +1,47 @@
+<div class="p-grid p-jc-center">
+    <div class="p-col-8">
+        <div class="card box">    
+            <p-tabView styleClass="tabview-custom">
+                <p-tabPanel>
+                    <ng-template pTemplate = "header">
+                        <i class="pi pi-calendar"></i>
+                        <span>Contienete</span>
+                    </ng-template>
+                    <h5>Seleccione la region</h5>
+        
+                    <div class="p-grid">
+                        <div class="p-col-12">
+                            <!-- [class.btn-primary]="region===regionActiva"-->
+                            <!--[ngClass]="{
+                                 'btn-primary': region===regionActiva
+                             }"-->
+                            <p-button class="p-mr-2" label="{{region | titlecase}}" *ngFor="let region of regiones" 
+                             (click)="activarRegion(region)"                  
+                            >
+                            
+                    
+                            </p-button>
+                        </div>
+                    </div>
+        
+                    <div class="p-col-12" >
+                        <app-pais-tabla [paises]="(paises | async) || []"></app-pais-tabla>
+                      </div>
+                    
+                </p-tabPanel>
+                <p-tabPanel header="Header II">
+                    <ng-template pTemplate = "header">
+                        <i class="pi pi-user"></i>
+                        <span>Pais</span>
+                    </ng-template>
+                 <app-por-pais></app-por-pais>
+                </p-tabPanel>
+                
+            </p-tabView>
+            </div>
+
+    </div>
+   
+
+</div>
+

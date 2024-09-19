@@ -1,0 +1,94 @@
+<div [formGroup]="upUsuarioFormGroup">
+    <div class="card-body">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-11">
+                    <div>
+                        <div><label>
+                                <H3 class="titulo-verde">Actualizar Usuarios</H3>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body"></div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" name="id" id="id" placeholder="Buscar por Id"
+                    formControlName="id" class="form-control label-format" />
+            </div>
+            <div class="col-md-2">
+                <div class="text-center">
+                    <input type="button" value="Buscar" name="Usuarios" id="Usuarios" (click)="Buscar()"
+                        class="btn  btn-primary verde2_b" />
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="id" class="label-format">Id</label>
+                <input type="text" name="id" id="id" placeholder=""
+                    formControlName="id" class="form-control label-format" readonly="true"/>
+            </div>
+            <div class="col-md-4">
+                <label for="nombreUsuario" class="label-format">Nombre Usuario</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombres"
+                    formControlName="nombreUsuario" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="apellidousuario" class="label-format">Apellido Usuario</label>
+                <input type="text" name="apellidousuario" id="apellidousuario" placeholder="Apellidos"
+                    formControlName="apellidousuario" class="form-control label-format" />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="loginUsuario" class="label-format">Usuario Login</label>
+                <input type="text" name="loginUsuario" id="loginUsuario" placeholder="Login Usuario"
+                    formControlName="loginUsuario" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="contrasenaUsuario" class="label-format">Contraseña</label>
+                <input type="password" name="contrasenaUsuario" id="contrasenaUsuario" placeholder="Contraseña"
+                    formControlName="contrasenaUsuario" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="idRol" class="label-format">Rol</label>
+                <input type="number" name="idRol" id="idRol" placeholder="Rol"
+                    formControlName="idRol" class="form-control label-format" />
+            </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Actualizar Datos" name="Usuarios" id="Usuarios" (click)="UpUsuarios()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Cancelar" name="Usuarios" id="Usuarios" (click)="Volver()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card-footer">
+        </div>
+        <div class="card-body">
+            <div class="row">
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    

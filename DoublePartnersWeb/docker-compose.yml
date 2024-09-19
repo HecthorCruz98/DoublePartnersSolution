@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+ boiler-plate-angular:
+  container_name: boiler-plate-angular
+  build:
+    context: .
+    dockerfile: dev.Dockerfile
+  hostname: boiler-plate-angular
+  volumes: 
+    - '.:/usr/src/app'
+    - '/usr/src/app/node_modules'
+  ports:
+    - '4200:4200'
+    - '49353:49153'
+

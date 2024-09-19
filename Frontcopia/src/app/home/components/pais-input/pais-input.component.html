@@ -1,0 +1,15 @@
+<form (ngSubmit)="buscar()" autocomplete="off">
+    <span class="p-float-label p-mt-4">
+        <input 
+        pInputText
+        type="text"
+        name="termino"
+        [(ngModel)]="termino"
+        (input)="teclapresionada()"
+        class="form-control"        
+        >
+        <label for="float-input">Busqueda Pais</label>
+    </span>
+   
+    
+</form>

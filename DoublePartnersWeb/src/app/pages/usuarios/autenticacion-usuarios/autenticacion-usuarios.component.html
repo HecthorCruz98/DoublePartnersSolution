@@ -1,0 +1,57 @@
+<div [formGroup]="loginFormGroup">
+    <div class="card-body">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-11">
+                    <div>
+                        <div><label>
+                                <H3 class="titulo-verde" text="center">Iniciar Sesion</H3>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body" text-align="center">
+    
+            <div class="col-md-4">
+                <label for="loginUsuario" class="label-format">Usuario</label>
+                <input type="text" name="loginUsuario" id="loginUsuario" placeholder="Usuario"
+                    formControlName="loginUsuario" class="form-control label-format" />
+            </div>
+          
+            <div class="col-md-4">
+                <label for="contrasenaUsuario" class="label-format">Contraseña</label>
+                <input type="password" name="contrasenaUsuario" id="contrasenaUsuario" placeholder="Contraseña"
+                    formControlName="contrasenaUsuario" class="form-control label-format" />
+            </div>
+
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Iniciar Sesion" name="Guardar" id="Guardar" (click)="AutenticacionUsuarios()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+        <div class="card-footer">
+        </div>
+        <div class="card-body">
+            <div class="row">
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    

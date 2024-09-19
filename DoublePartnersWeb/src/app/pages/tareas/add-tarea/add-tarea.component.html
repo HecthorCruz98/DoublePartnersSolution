@@ -1,0 +1,68 @@
+<div [formGroup]="addTareaFormGroup">
+    <div class="card-body">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-11">
+                    <div>
+                        <div><label>
+                                <H3 class="titulo-verde">Crear Tarea</H3>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+    
+        <div class="row">
+            <div class="col-md-4">
+                <label for="id" class="label-format">Id</label>
+                <input type="text" name="id" id="id" placeholder=""
+                    formControlName="id" class="form-control label-format" readonly="true"/>
+            </div>
+            <div class="col-md-4">
+                <label for="descripcionTarea" class="label-format">Descripcion Tarea</label>
+                <input type="text" name="descripcionTarea" id="descripcionTarea" placeholder="Tarea"
+                    formControlName="descripcionTarea" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="idEstado" class="label-format">Estado</label>
+                <input type="text" name="idEstado" id="idEstado" placeholder="Estado"
+                    formControlName="idEstado" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="idUsuario" class="label-format">Usuario</label>
+                <input type="text" name="idUsuario" id="idUsuario" placeholder="Usuario"
+                    formControlName="idUsuario" class="form-control label-format" />
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Guardar Datos" name="Guardar" id="Guardar" (click)="AddTareas()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Cancelar" name="Tarea" id="Tarea" (click)="Volver()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+        <div class="card-footer">
+        </div>
+        <div class="card-body">
+            <div class="row">
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    

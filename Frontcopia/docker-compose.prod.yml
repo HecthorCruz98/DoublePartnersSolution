@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+ initialproyect:
+  container_name: initialProyect
+  build:
+    context: .
+    dockerfile: prod.Dockerfile
+  hostname: initialProyect
+  restart: always
+  ports:
+    - "9005:80"
+

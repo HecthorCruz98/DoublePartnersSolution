@@ -1,0 +1,49 @@
+{
+  
+    "/GetUsuario/*": {
+        "target": "https://localhost:7269/api/v1/Usuario",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/CreateUsuario/*": {
+        "target": "https://localhost:7269/api/v1/Usuario",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/UpdateUsuario/*": {
+        "target": "https://localhost:7269/api/v1/Usuario",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/DeleteUsuario/*": {
+        "target": "https://localhost:7269/api/v1/Usuario",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/GetTarea/*": {
+        "target": "https://localhost:7269/api/v1/Tarea",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/CreateTarea/*": {
+        "target": "https://localhost:7269/api/v1/Tarea",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/UpdateTarea/*": {
+        "target": "https://localhost:7269/api/v1/Tarea",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/DeleteTarea/*": {
+        "target": "https://localhost:7269/api/v1/Tarea",
+        "secure": false,
+        "loglevel": "debug"
+    },
+    "/LoginUsuario/*": {
+        "target": "https://localhost:7269/api/v1/Login",
+        "secure": false,
+        "loglevel": "debug"
+    }
+
+}

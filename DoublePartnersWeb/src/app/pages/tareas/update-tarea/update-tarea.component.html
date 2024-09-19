@@ -1,0 +1,82 @@
+<div [formGroup]="upTareaFormGroup">
+    <div class="card-body">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-11">
+                    <div>
+                        <div><label>
+                                <H3 class="titulo-verde">Actualizar Tareas</H3>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body"></div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" name="id" id="id" placeholder="Buscar por Id"
+                    formControlName="id" class="form-control label-format" />
+            </div>
+            <div class="col-md-2">
+                <div class="text-center">
+                    <input type="button" value="Buscar" name="Usuarios" id="Usuarios" (click)="Buscar()"
+                        class="btn  btn-primary verde2_b" />
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="id" class="label-format">Id</label>
+                <input type="text" name="id" id="id" placeholder=""
+                    formControlName="id" class="form-control label-format" readonly="true"/>
+            </div>
+            <div class="col-md-4">
+                <label for="descripcionTarea" class="label-format">Descripcion Tarea</label>
+                <input type="text" name="descripcionTarea" id="descripcionTarea" placeholder="Tarea"
+                    formControlName="descripcionTarea" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="idEstado" class="label-format">Estado</label>
+                <input type="text" name="idEstado" id="idEstado" placeholder="Estado"
+                    formControlName="idEstado" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="idUsuario" class="label-format">Usuario</label>
+                <input type="text" name="idUsuario" id="idUsuario" placeholder="Usuario"
+                    formControlName="idUsuario" class="form-control label-format" />
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Actualizar Datos" name="Tarea" id="Tarea" (click)="UpTareas()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Cancelar" name="Tarea" id="Tarea" (click)="Volver()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card-footer">
+        </div>
+        <div class="card-body">
+            <div class="row">
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    

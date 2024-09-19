@@ -1,0 +1,99 @@
+<div [formGroup]="upFormGroup">
+    <div class="card-body">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-11">
+                    <div>
+                        <div><label>
+                                <H3 class="titulo-verde">Update Customer</H3>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body"></div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" name="id" id="id" placeholder="Buscar por Id"
+                    formControlName="id" class="form-control label-format" />
+            </div>
+            <div class="col-md-2">
+                <div class="text-center">
+                    <input type="button" value="Buscar" name="Customer" id="Customer" (click)="Buscar()"
+                        class="btn  btn-primary verde2_b" />
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="nombre" class="label-format">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombres"
+                    formControlName="nombre" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="apellido" class="label-format">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellidos"
+                    formControlName="apellido" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="identificacion" class="label-format">Identificacion</label>
+                <input type="number" name="identificacion" id="identificacion" placeholder="Identificacion"
+                    formControlName="identificacion" class="form-control label-format" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="telefono" class="label-format">Telefono</label>
+                <input type="number" name="telefono" id="telefono" placeholder="Telefono"
+                    formControlName="telefono" class="form-control label-format" />
+            </div>
+            <div class="col-md-2">
+                <label for="estado" class="label-format">Estado</label>
+                <input type="number" name="estado" id="estado" placeholder="Estado"
+                    formControlName="estado" class="form-control label-format" />
+            </div>
+            <div class="col-md-2">
+                <label for="direccion" class="label-format">Direccion</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion"
+                    formControlName="direccion" class="form-control label-format" />
+            </div>
+            <div class="col-md-4">
+                <label for="correo" class="label-format">Correo</label>
+                <input type="email" name="correo" id="correo" placeholder="Correo"
+                    formControlName="correo" class="form-control label-format" />
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Actualizar Datos" name="Customer" id="Customer" (click)="UpCustomers()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <input type="button" enabled="true" value="Cancelar" name="Customer" id="Customer" (click)="Volver()"
+                            class="btn  btn-primary verde2_b" />
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card-footer">
+        </div>
+        <div class="card-body">
+            <div class="row">
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    

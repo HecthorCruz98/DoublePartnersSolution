@@ -1,0 +1,82 @@
+<div class="container mt-2">
+    <div [formGroup]="listarFormGroup">
+        <div class="card form-group">
+
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-11">
+                        <div>
+                            <div><label>
+                                    <H3 class="titulo-verde">Customer</H3>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="card-body">
+            <div class="row">
+
+            <div class="col-md-2">
+                <div class="text-center">
+                    <input type="button" value="Crear Nuevo Registro" name="Customer" id="Customer" (click)="AddCustomers()"
+                        class="btn  btn-primary verde2_b" />
+                </div>
+            </div>  
+            <div class="col-md-8">
+
+            </div>            
+            <div class="col-md-2">
+                <div class="text-center">
+                    <input type="button" value="Actualizar Registro" name="Customer" id="Customer" (click)="UpCustomers()"
+                        class="btn  btn-primary verde2_b" />
+                </div>
+            </div>
+            </div>
+           </div>
+            <div class="card-body">
+                <div class="row">
+                    <p-table styleClass="p-datatable-gridlines" responsiveLayout="scroll" [value] ="objecs">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Direccion</th>
+                                <th>Telefono</th>
+                                <th>Identificacion</th>
+                                <th>Correo</th>
+                                <th>Estado</th>
+
+                            </tr>
+                        </ng-template>
+                        <ng-template pTemplate="body" let-objec>
+                            <tr>
+                                <td>{{objec.id}}</td>
+                                <td>{{objec.nombre}}</td>
+                                <td>{{objec.apellido}}</td>
+                                <td>{{objec.direccion}}</td>
+                                <td>{{objec.telefono}}</td>
+                                <td>{{objec.identificacion}}</td>
+                                <td>{{objec.correo}}</td>
+                                <td>{{objec.estado}}</td>
+                            </tr> 
+                        </ng-template>
+                    </p-table>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="number" name="id" id="id"formControlName="id" class="form-control label-format" placeholder="Eliminar por Id" />
+                     </div>
+                     <div class="col-md-2">
+                       <div class="text-center">
+                           <input type="button" value="Eliminar Registro" name="Customer" id="Customer" (click)="DelCustomers()"
+                               class="btn  btn-primary verde2_b" />
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>

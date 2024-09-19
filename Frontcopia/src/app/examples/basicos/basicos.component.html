@@ -1,0 +1,84 @@
+<h2>Formulario Reactivo: Básico</h2>
+<hr>
+<div class="p-grid p-jc-center">
+    <div class="p-col-6">
+        <div class="p-fluid">
+            <form  autocomplete="off" [formGroup]="myForm" (ngSubmit)="guardar()" id="formProduct" >
+            <!-- Campo de producto -->
+            <div class="p-field p-grid">        
+                <label for="Nombreproducto" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre producto</label>
+                <div class="p-col-12 p-md-10">
+                    <input type="text"
+                        pInputText 
+                        formControlName="nombre"                           
+                        placeholder="Nombre del producto"
+                        id="nombre"
+                    >
+                    <small id="precio-help" class="p-error"
+                            *ngIf="getError('nombre')"
+                            >
+                           El nombre debe contener minimo 3 letras
+                    </small>
+                </div>
+            </div>
+        
+            <!-- Campo de producto -->
+            <div class="p-field p-grid">  
+                <label for="Precio" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Precio</label>
+                <div  class="p-col-12 p-md-10">
+                            <input type="number"
+                                    pInputText                          
+                                   formControlName="precio" 
+                                   id="precio"
+                                   placeholder="Precio del producto"
+                                  >
+                            
+                            <small id="precio-help" class="p-error"
+                            *ngIf="getError('precio')">
+                                El precio debe de ser 0 o mayor
+                            </small>
+                    </div>
+            </div>
+        
+            <!-- Campo de existencias -->
+            <div class="p-field p-grid"> 
+                <label  for="Existencias" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Existencias</label>
+                <div class="p-col-12 p-md-10">
+                    <input type="number"
+                        pInputText                               
+                        formControlName="existencia"
+                        id="existencia"                          
+                        placeholder="Existencias del producto"
+                    >
+                    <small id="precio-help" class="p-error"
+                    *ngIf="getError('existencia')"
+                    >
+                        Las existencias deben ser mayor a 0
+                    </small>
+                </div>
+            </div>
+        
+        
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit"
+                                    pButton
+                                    id="Guardar"
+                                    label="Guardar">                        
+                            </button>
+                        </div>
+                    </div>           
+        </form>
+        
+        </div>
+    </div>
+</div>
+<div id="error">{{mensaje}}</div>
+
+
+
+
+
+
+
+
